@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Hurricane&family=Red+Hat+Mono:wght@300&display=swap');
+
+body {
+  background-color: #2c2a2a80;
+  font-family: 'Red Hat Mono', monospace;
+  color:white;
+}
+p{
+  color:black;
+}
+.img-fix{
+  display: flex;
+  width:100px;
+  height:100px;
+  margin:0px auto;
+}
+.main-text{
+  width:auto;
+  display:flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 10px;
+}
+.main-div{
+  width:100%;
+  display:flex;
+  justify-content: left;
+  flex-direction: row;
+  border-bottom: 1px solid #c9c9c9;
+}
+.text-center{
+  text-align:center;
+}
+.text-justify{
+  text-align:justify;
+}
+.text-left{
+  text-align:left;
+}
+.text-right{
+  text-align:right;
+}
+#services{
+  display:flex;
+  flex-direction: column;
+}
+.btn {
+  padding: 10px 20px;
+  height: 50px;
+  font-size: 1em;
+  font-weight: 900;
+  text-transform: uppercase;
+  border: 1px #20c30e solid;
+  border-radius: 5px;
+  background: #16ff16c9;
+  cursor: pointer;
+  color:white;
+}
+.btn:hover{
+  padding: 10px 20px;
+  background-color:#2ef51ce8;
+}
+h1,h2,h3{
+  color:black;
+}
+#header{
+  position: fixed;
+  top: 0;
+  min-height: 75px;
+  padding: 0px 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #eee;
+  font-size:18px;
+}
+nav > ul {
+  width: 35vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  list-style: none;
+}
+nav > ul a {
+  color: black;
+  text-decoration: none;
+}
+nav > ul a:hover {
+  color: black;
+  font-size:20px;
+  font-weight:bold;
+  text-decoration: none;
+}
+.logo {
+  width: 60vw;
+  display: flex;
+}
+.logo > img {
+  width: 30px;
+  height: 30px;
+  max-width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  margin-left: 20px;
+}
+.logo > a {
+  width: 200px;
+  height: 30px;
+  max-width: 300px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  text-align: left;
+  margin-left: 20px;
+  text-decoration:none;
+  color: black;
+  font-weight:bold;
+}
+#footer{
+  width:100%;
+  position: fixed;
+  bottom: 0;
+  max-height: 40px;
+  padding: 0px 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #eee;
+  font-size:18px;
+}
+#footer > ul {
+  display: flex;
+  justify-content: flex-end;
+}
+
+#footer > ul > li {
+  padding: 0 10px;
+  list-style: none;
+}
+#footer > ul > li a {
+  text-decoration:none;
+  color:black;
+  font-weight:bold;
+}
+#footer > span {
+  color:black;
+  font-weight:bold;
+}
+.email-section{
+  display:flex;
+  flex-direction: column;
+  text-align: center;
+  width: 80%;
+  height:auto;
+  margin-left:10%;
+  margin-top:90px;
+  padding-bottom:20px;
+  background-color:transparent;
+}
+.email-section input[type=email]{
+  width:70%;
+  height:44px;
+  padding:0px;
+  margin:10px;
+  border-radius:8px;
+  border-color:white;
+  text-align:center;
+}
+.email-section input[type=email]:focus{
+  outline-color:#16ff16c9;
+  outline-style: double;
+  color:red;
+  font-size:18px;
+  font-weight:bold;
+}
+.email-section  > h2 {
+  color:white;
+}
+.container {
+  width: 80%;
+  margin-left:10%;
+  margin-bottom:50px;
+  padding-bottom:20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+  background-color:#f9f9f9;
+  border-radius: 5px;
+}
+#pricing-row{
+  display: flex;
+  flex-direction: row;
+justify-content: center;
+}
+.packets-service{
+  display: flex;
+  flex-direction: column;
+
+  min-width: 300px;
+  border-radius: 10px;
+  padding: 20px;
+  border: 1px solid #c9c9c9;
+  margin-left: 10px;
+}
+.title-div{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.video-div{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+li{
+  color:black;
+}
+ul,ol{
+  list-style: none;
+}
+
+@media(min-width:500px){
+  form input[type=email]{
+    width:100% !important;
+  }
+  form input[type=submit]{
+    width:90% !important;
+    margin:0 auto;
+    
+  }
+  form{
+    magin-bottom:30px;
+    height:120px;
+  }
+}
+@media(min-width:1024px){
+  form input[type=email]{
+    width:65% !important;
+  }
+  form input[type=submit]{
+    width:30% !important;
+  }
+}
